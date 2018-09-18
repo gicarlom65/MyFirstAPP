@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CCA - Campionato Agenti</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-32x32.png">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="build/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <style>
+    .table td, .table th {
+        text-align: center;   
+        vertical-align: middle;
+    }
+  </style>  
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="build/img/CCA_LOGO.jpg " alt="AdminLTE Logo" class="brand-image "
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Conqord Oil</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            
+          <li class="nav-header">1° EDIZIONE CAMPIONATO AGENTI</li>
+            
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="nav-icon fa fa-home"></i>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>  
+            
+          <li class="nav-item">
+            <a href="obiettivi.html" class="nav-link">
+              <i class="nav-icon fa fa-bullseye"></i>
+              <p>
+                Obiettivi
+              </p>
+            </a>
+          </li> 
+            
+          <li class="nav-item">
+            <a href="classifica.html" class="nav-link">
+              <i class="nav-icon fa fa-table"></i>
+              <p>
+                Classifica
+              </p>
+            </a>
+          </li>  
+ 
+          <li class="nav-item">
+            <a href="calendario.html" class="nav-link">
+              <i class="nav-icon fa fa-calendar"></i>
+              <p>
+                Calendario
+              </p>
+            </a>
+          </li>
+            
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-shopping-bag"></i>
+              <p>
+                Promozioni del mese
+                <i class="fa fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="promo.html" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon text-danger"></i>
+                  <p>ROLOIL</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="promoq8.html" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon text-info"></i>
+                  <p>Q8Oils</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+            
+          <li class="nav-item">
+            <a href="comunicazioni.html" class="nav-link">
+              <i class="nav-icon fa fa-comment"></i>
+              <p>
+                Comunicazioni
+              </p>
+            </a>
+          </li>
+            
+          <li class="nav-item">
+            <a href="regolamento.html" class="nav-link">
+              <i class="nav-icon fa fa-book"></i>
+              <p>
+                Regolamento
+              </p>
+            </a>
+          </li>  
+            
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Promozioni Q8Oils</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Promozioni</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+          
+          
+        <div class="row">
+          <div class="col-12">
+              
+            <div class="card card-success card-outline">
+              <div class="card-header">
+                <h3 class="card-title" id="settembre"><strong>Settembre 2018 - LISTINO PROMO  HDDO</strong> (Promozione valida dal 1 Settembre al 31 Ottobre 2018)</h3>
+                <p>Con l'acquisto di 1 tanica da 1000LT, sarà possibile omaggiare 5 jerrican di Q8 AXLE OIL XG 80W140.</p>
+                <p>Con l'acquisto di 1 Fusto da 208LT, sarà possibile omaggiare 1 jerrican di Q8 T 56 75W90.</p>
+                <p>Con l'acquisto di 10 jerrican da 20LT, sarà possibile omaggiare 1 jerrican dello stesso prodotto oppure Q8 T 55 85W140 o 80W90 o di antigelo.</p>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover">
+                  <tr>
+                    <th>Codice<br>Prodotto</th>
+                    <th>Codice<br>Imballo</th>
+                    <th>Prodotto</th>
+                    <th>Imballo</th>
+                    <th>Info</th>
+                    <th>Prezzo di Listino<br>(€/LT)</th>
+                    <th>Prezzo Promo<br>(€/LT)</th>
+                  </tr>
+                    
+<tr><td>4541</td><td>768</td><td>Q8 FT 8700 FE 5W-30</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,75(C)</del></td><td>6,90 (H)</td></tr>
+<tr><td>4541</td><td>738</td><td>Q8 FT 8700 FE 5W-30</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,48(C)</del></td><td>6,63 (H)</td></tr>
+<tr><td>4541</td><td>309</td><td>Q8 FT 8700 FE 5W-30</td><td>TANICA 1000 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,48(C)</del></td><td>6,63 (H)</td></tr>
+<tr><td>994</td><td>768</td><td>Q8 SUPERTRUCK FE 5W30</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,66(C)</del></td><td>6,77 (H)</td></tr>
+<tr><td>994</td><td>738</td><td>Q8 SUPERTRUCK FE 5W30</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,39(C)</del></td><td>6,50 (H)</td></tr>
+<tr><td>4540</td><td>768</td><td>Q8 FT 8600 10W-40</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,56(C)</del></td><td>6,37 (H)</td></tr>
+<tr><td>4540</td><td>738</td><td>Q8 FT 8600 10W-40</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,29(C)</del></td><td>6,10 (H)</td></tr>
+<tr><td>4540</td><td>309</td><td>Q8 FT 8600 10W-40</td><td>TANICA 1000 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,29(C)</del></td><td>6,10 (H)</td></tr>
+<tr><td>4457</td><td>768</td><td>Q8 T 860 10W40</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,01(A)</del></td><td>6,14 (H)</td></tr>
+<tr><td>4457</td><td>738</td><td>Q8 T 860 10W40</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>6,74(A)</del></td><td>5,87 (H)</td></tr>
+<tr><td>4457</td><td>309</td><td>Q8 T 860 10W40</td><td>TANICA 1000 LT</td><td><i class='fa fa-truck'></i></td><td><del>6,74(A)</del></td><td>5,87 (H)</td></tr>
+                    
+<tr><td>4528</td><td>768</td><td>Q8 FT 8300 LA 10W-40</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,35(A)</del></td><td>6,10 (H)</td></tr>
+<tr><td>4528</td><td>738</td><td>Q8 FT 8300 LA 10W-40</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,08(A)</del></td><td>5,83 (H)</td></tr>
+<tr><td>4528</td><td>309</td><td>Q8 FT 8300 LA 10W-40</td><td>TANICA 1000 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,08(A)</del></td><td>5,83 (H)</td></tr>
+<tr><td>4544</td><td>768</td><td>Q8 FT 8300 LA 15W-40</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>7,20(A)</del></td><td>6,00 (H)</td></tr>
+<tr><td>4544</td><td>738</td><td>Q8 FT 8300 LA 15W-40</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>6,93(A)</del></td><td>5,73 (H)</td></tr>
+<tr><td>4544</td><td>309</td><td>Q8 FT 8300 LA 15W-40</td><td>TANICA 1000 LT</td><td><i class='fa fa-truck'></i></td><td><del>6,93(A)</del></td><td>5,73 (H)</td></tr>
+                    
+<tr><td>4523</td><td>768</td><td>Q8 T 750 15W40</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>5,50(A)</del></td><td>5,56 (H)</td></tr>
+<tr><td>4523</td><td>738</td><td>Q8 T 750 15W40</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>5,23(A)</del></td><td>5,29 (H)</td></tr>
+<tr><td>4523</td><td>309</td><td>Q8 T 750 15W40</td><td>TANICA 1000 LT</td><td><i class='fa fa-truck'></i></td><td><del>5,23(A)</del></td><td>5,29 (H)</td></tr>
+<tr><td>4486</td><td>768</td><td>Q8 T 520 15W40</td><td>JERRICAN 20 LT</td><td><i class='fa fa-truck'></i></td><td><del>5,22(A)</del></td><td>5,15 (H)</td></tr>
+<tr><td>4486</td><td>738</td><td>Q8 T 520 15W40</td><td>FUSTO 208 LT</td><td><i class='fa fa-truck'></i></td><td><del>4,95(A)</del></td><td>4,88 (H)</td></tr>
+<tr><td>4486</td><td>309</td><td>Q8 T 520 15W40</td><td>TANICA 1000 LT</td><td><i class='fa fa-truck'></i></td><td><del>4,95(A)</del></td><td>4,88 (H)</td></tr>
+
+
+
+
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+          </div>
+        </div><!-- /.row -->
+          
+          
+        <div class="row">
+          <div class="col-12">
+              
+            <div class="card card-danger card-outline">
+              <div class="card-header">
+                <h3 class="card-title" id="agosto"><strong>Agosto 2018 - LISTINO PROMO  MOTO &amp; MARINE</strong> (Promozione valida dal 1 Agosto al 31 Agosto 2018)</h3>
+                <p>Con l'acquisto di 6 cartoni, sarà possibile omaggiare 1 ct/15 del prodotto maggiormente acquistato.</p>
+                <p>L'omaggio sarà ininfluente sulle provvigioni.</p>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover">
+                  <tr>
+                    <th>Codice<br>Prodotto</th>
+                    <th>Codice<br>Imballo</th>
+                    <th>Prodotto</th>
+                    <th>Imballo</th>
+                    <th>Info</th>
+                    <th>Prezzo di Listino<br>(€/UVR)</th>
+                    <th>Prezzo Promo<br>(€/UVR)</th>
+                  </tr>
+
+<tr><td>4415</td><td>314</td><td>Q8 SBK RACING</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>9,88 (C)</del></td><td>7,40 (P)</td></tr>
+<tr><td>4571</td><td>314</td><td>Q8 SBK 10W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>8,25 (C)</del></td><td>6,70 (P)</td></tr>          
+<tr><td>4451</td><td>314</td><td>Q8 CLASS PLUS 5W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>9,60 (C)</del></td><td>7,10 (P)</td></tr>
+<tr><td>4572</td><td>314</td><td>Q8 CLASS 10W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>7,80 (C)</del></td><td>6,50 (P)</td></tr>
+<tr><td>4409</td><td>314</td><td>Q8 GT CRUISER</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>7,35 (C)</del></td><td>6,50 (P)</td></tr>
+                    
+<tr><td>485</td><td>314</td><td>Q8 MOTO RS EXTREME</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>9,31 (C)</del></td><td>6,90 (P)</td></tr>
+<tr><td>483</td><td>314</td><td>Q8 CITY BIKE ULTRA</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>8,31 (C)</del></td><td>6,70 (P)</td></tr>                
+<tr><td>484</td><td>314</td><td>Q8 DAILY SUPER</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>7,10 (C)</del></td><td>6,10 (P)</td></tr>
+<tr><td>648</td><td>314</td><td>Q8 CITY MIX</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>6,32 (A)</del></td><td>5,50 (P)</td></tr>
+<tr><td>649</td><td>314</td><td>Q8 UNIMIX 2T</td><td>CARTONE 15 PZ</td><td><i class='fa fa-motorcycle'></i></td><td><del>5,97 (A)</del></td><td>5,30 (P)</td></tr>
+
+<tr><td>832</td><td>314</td><td>Q8 OUTBOARD SYNT 3</td><td>CARTONE 15 PZ</td><td><i class='fa fa-ship'></i></td><td><del>9,20 (C)</del></td><td>7,40 (P)</td></tr>
+<tr><td>4573</td><td>314</td><td>Q8 OUTBOARD 4T</td><td>CARTONE 15 PZ</td><td><i class='fa fa-ship'></i></td><td><del>8,43 (C)</del></td><td>7,30 (P)</td></tr>              
+<tr><td>595</td><td>314</td><td>Q8 OUTBOARD</td><td>CARTONE 15 PZ</td><td><i class='fa fa-ship'></i></td><td><del>8,19 (A)</del></td><td>6,50 (P)</td></tr>
+
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+              
+          </div>
+        </div><!-- /.row -->
+          
+          
+          
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-warning card-outline">
+              <div class="card-header">
+                <h3 class="card-title" id="luglio"><strong>Luglio 2018 - LISTINO PROMO lancio 0w20</strong> (Promozione valida dal 1 Luglio al 30 Settembre 2018)</h3>
+                <p>Con l'acquisto di 10 cartoni, di cui 1 ct/15 di 0W20 sarà possibile omaggiare 1 ct/15. del prodotto maggiormente acquistato.</p>
+                <p>L'omaggio sarà ininfluente sulle provvigioni.</p>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover">
+                  <tr>
+                    <th>Codice<br>Prodotto</th>
+                    <th>Codice<br>Imballo</th>
+                    <th>Prodotto</th>
+                    <th>Imballo</th>
+                    <th>Info</th>
+                    <th>Prezzo di Listino<br>(€/UVR)</th>
+                    <th>Prezzo Promo<br>(€/UVR)</th>
+                  </tr>
+                    
+<tr><td>4625</td><td>314</td><td>Q8 FORMULA V BLUE 0W-20</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><span class="badge bg-success">New</span></td><td>10,60 (P)</td></tr>
+<tr><td>4626</td><td>314</td><td>Q8 FORMULA ULTRA 0W-20</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><span class="badge bg-success">New</span></td><td>9,00 (P)</td></tr>               
+<tr><td>4590</td><td>314</td><td>Q8 FORMULA ELITE C2 0W-30</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><span class="badge bg-success">New</span></td><td>9,30 (P)</td></tr>
+<tr><td>4553</td><td>314</td><td>Q8 FORMULA R LONG LIFE 5W-30</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>9,12 (C)</del></td><td>7,35 (P)</td></tr>
+<tr><td>4460</td><td>314</td><td>Q8 FORMULA M LONG LIFE 5W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>9,32 (C)</del></td><td>7,05 (P)</td></tr>       
+<tr><td>4550</td><td>314</td><td>Q8 FORMULA VX LONGLIFE 5W-30</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>9,45 (C)</del></td><td>7,25 (P)</td></tr>
+<tr><td>4465</td><td>314</td><td>Q8 FORMULA SPECIAL G LL 5W-30</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>9,32 (C)</del></td><td>7,04 (P)</td></tr>               
+<tr><td>4533</td><td>314</td><td>Q8 FORMULA SPECIAL GAS 5W-30</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>9,40 (C)</del></td><td>7,14 (P)</td></tr>
+<tr><td>4442</td><td>314</td><td>Q8 FORMULA EXCEL DIESEL 5W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>9,10 (C)</del></td><td>6,11 (P)</td></tr>
+<tr><td>4441</td><td>314</td><td>Q8 FORMULA EXCEL 5W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>9,08 (C)</del></td><td>6,11 (P)</td></tr>
+
+<tr><td>4570</td><td>500</td><td>Q8 FORMULA TOP TURBODIESEL</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>6,98 (A)</del></td><td>5,60 (P)</td></tr>
+<tr><td>4569</td><td>500</td><td>Q8 FORMULA TOP 10W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>6,93 (A)</del></td><td>5,55 (P)</td></tr>
+<tr><td>4535</td><td>500</td><td>Q8 FORMULA RALLYE BD&amp;G 15W-40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>6,08 (A)</del></td><td>5,26 (P)</td></tr>
+<tr><td>4472</td><td>500</td><td>Q8 TOURING MG 15W40</td><td>CARTONE 15 PZ</td><td><i class='fa fa-car'></i></td><td><del>5,49 (A)</del></td><td>5,16 (P)</td></tr>
+
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div><!-- /.row -->
+          
+          
+          
+          
+
+          
+
+          
+          
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Made with <i class="fa fa-heart"></i> in <a href="https://www.conqordoil.it" target="_blank">Conqord Oil</a>.</strong>
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="build/js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="build/js/bootstrap.bundle.min.js"></script>
+<!-- Slimscroll -->
+<script src="build/js/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="build/js/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="build/js/adminlte.min.js"></script>
+</body>
+</html>

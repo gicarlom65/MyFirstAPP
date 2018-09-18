@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CCA - Campionato Agenti</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-32x32.png">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="build/css/dataTables.bootstrap4.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="build/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="build/img/CCA_LOGO.jpg " alt="AdminLTE Logo" class="brand-image "
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Conqord Oil</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            
+          <li class="nav-header">1° EDIZIONE CAMPIONATO AGENTI</li>
+            
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="nav-icon fa fa-home"></i>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>  
+            
+          <li class="nav-item">
+            <a href="obiettivi.html" class="nav-link">
+              <i class="nav-icon fa fa-bullseye"></i>
+              <p>
+                Obiettivi
+              </p>
+            </a>
+          </li> 
+            
+          <li class="nav-item">
+            <a href="classifica.html" class="nav-link">
+              <i class="nav-icon fa fa-table"></i>
+              <p>
+                Classifica
+              </p>
+            </a>
+          </li>  
+ 
+          <li class="nav-item">
+            <a href="calendario.html" class="nav-link">
+              <i class="nav-icon fa fa-calendar"></i>
+              <p>
+                Calendario
+              </p>
+            </a>
+          </li>
+            
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-shopping-bag"></i>
+              <p>
+                Promozioni del mese
+                <i class="fa fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="promo.html" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon text-danger"></i>
+                  <p>ROLOIL</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="promoq8.html" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon text-info"></i>
+                  <p>Q8Oils</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+            
+          <li class="nav-item">
+            <a href="comunicazioni.html" class="nav-link">
+              <i class="nav-icon fa fa-comment"></i>
+              <p>
+                Comunicazioni
+              </p>
+            </a>
+          </li>
+            
+          <li class="nav-item">
+            <a href="regolamento.html" class="nav-link">
+              <i class="nav-icon fa fa-book"></i>
+              <p>
+                Regolamento
+              </p>
+            </a>
+          </li>  
+            
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+    
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+      
+      
+      
+      
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Classifica Campionato Agenti</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Classifica</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Classifica di Agosto 2018 (2°giornata)</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example2" class="table table-bordered table-striped">
+                  
+                <thead>
+                    <tr>
+                      <th>Pos.</th>
+                      <th>Giocatore</th>
+                      <th>Zona</th>
+                      <th>Allenatore</th>
+                      <th>Squadra</th>
+                      <th>Punteggio</th>
+                      <th>(2°giornata)</th>
+                    </tr>
+                </thead>
+                  
+                <tfoot>
+                    <tr>
+                      <th>Pos.</th>
+                      <th>Giocatore</th>
+                      <th>Zona</th>
+                      <th>Allenatore</th>
+                      <th>Squadra</th>
+                      <th>Punteggio</th>
+                      <th>(2°giornata)</th>
+                    </tr>
+                </tfoot>
+<tbody>
+<tr><td align='center'>1</td><td><i class="fa fa-user-ninja" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> RUSSO PIETRO</td><td align='center'>908</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>18</td><td align='center'>(1, 1, 1, 3)</td></tr>
+<tr><td align='center'>2 (<i class='fa fa-caret-up'; style='color:green'></i> 3)</td><td><i class="fa fa-user-ninja" style="color:#078930;font-size:20px;margin-right:8px;"></i> MUSSINELLI MAURO</td><td align='center'>109</td><td>VALACCHI STEFANO</td><td align='center'>Brescia</td><td align='center'>17</td><td align='center'>(3, 1, 3, 3)</td></tr>
+<tr><td align='center'>2 (<i class='fa fa-caret-up'; style='color:green'></i> 3)</td><td><i class="fa fa-user-ninja" style="color:#078930;font-size:20px;margin-right:8px;"></i> DENDENA GAETANO</td><td align='center'>030</td><td>VALACCHI STEFANO</td><td align='center'>Brescia</td><td align='center'>17</td><td align='center'>(1, 3, 3, 3)</td></tr>
+<tr><td align='center'>2 (<i class='fa fa-caret-up'; style='color:green'></i> 3)</td><td><i class="fa fa-user-ninja" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MINARDI RICCARDO</td><td align='center'>517</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>17</td><td align='center'>(1, 3, 3, 3)</td></tr>
+<tr><td align='center'>5 (<i class='fa fa-caret-down'; style='color:red'></i> -3)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CHIODINI ANDREA</td><td align='center'>373</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>16</td><td align='center'>(3, 1, 0, 3)</td></tr>
+<tr><td align='center'>5 (<i class='fa fa-caret-up'; style='color:green'></i> 13)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FARAGLIA ALESSANDRA</td><td align='center'>819</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>16</td><td align='center'>(3, 3, 1, 3)</td></tr>
+<tr><td align='center'>7 (<i class='fa fa-caret-down'; style='color:red'></i> -3)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> NARDONE LUIGI</td><td align='center'>807</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>15</td><td align='center'>(1, 3, 0, 3)</td></tr>
+<tr><td align='center'>8 (<i class='fa fa-caret-down'; style='color:red'></i> -3)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TREDICI JOHN</td><td align='center'>794</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>14</td><td align='center'>(1, 3, 0, 3)</td></tr>
+<tr><td align='center'>8 (<i class='fa fa-caret-up'; style='color:green'></i> 10)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BALDUCCI ANGELO</td><td align='center'>518</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>14</td><td align='center'>(1, 3, 1, 3)</td></tr>
+<tr><td align='center'>10 (<i class='fa fa-caret-up'; style='color:green'></i> 8)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FIENGA FRANCESCO</td><td align='center'>911</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>13</td><td align='center'>(3, 1, 0, 3)</td></tr>
+<tr><td align='center'>10 (<i class='fa fa-caret-up'; style='color:green'></i> 8)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> ARCIDIACONO FABIO GIUSEPPE</td><td align='center'>985</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>13</td><td align='center'>(1, 3, 0, 3)</td></tr>
+<tr><td align='center'>10 (<i class='fa fa-caret-up'; style='color:green'></i> 8)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> BOVE AGOSTINO</td><td align='center'>881</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>13</td><td align='center'>(1, 3, 0, 3)</td></tr>
+<tr><td align='center'>13 (<i class='fa fa-caret-up'; style='color:green'></i> 5)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SAGRIPANTI MARCO</td><td align='center'>816</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>12</td><td align='center'>(0, 3, 0, 3)</td></tr>
+<tr><td align='center'>13 (<i class='fa fa-caret-up'; style='color:green'></i> 39)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> IACOVELLI FABIO</td><td align='center'>915</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>12</td><td align='center'>(1, 3, 3, 1)</td></tr>
+<tr><td align='center'>15 (<i class='fa fa-caret-down'; style='color:red'></i> -13)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MALGHERINI OLGA</td><td align='center'>870</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>11</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>15 (<i class='fa fa-caret-down'; style='color:red'></i> -10)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CAPUTO ANGELO</td><td align='center'>912</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>11</td><td align='center'>(0, 3, 0, 1)</td></tr>
+<tr><td align='center'>15 (<i class='fa fa-caret-up'; style='color:green'></i> 3)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> DI IORIO AUGUSTO</td><td align='center'>907</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>11</td><td align='center'>(1, 1, 0, 3)</td></tr>
+<tr><td align='center'>15 (<i class='fa fa-caret-up'; style='color:green'></i> 3)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BERGAMI MASSIMO</td><td align='center'>506</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>11</td><td align='center'>(1, 3, 0, 1)</td></tr>
+<tr><td align='center'>15 (<i class='fa fa-caret-up'; style='color:green'></i> 32)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SEMBOLONI NATALE</td><td align='center'>619</td><td>BERTOLI CLAUDIO</td><td align='center'>Firenze</td><td align='center'>11</td><td align='center'>(0, 3, 0, 3)</td></tr>
+<tr><td align='center'>15 (<i class='fa fa-caret-up'; style='color:green'></i> 37)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SODI CARLO</td><td align='center'>615</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>11</td><td align='center'>(1, 3, 0, 3)</td></tr>
+<tr><td align='center'>15 (<i class='fa fa-caret-up'; style='color:green'></i> 70)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PISTORESI MASSIMO</td><td align='center'>104</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>11</td><td align='center'>(1, 3, 1, 3)</td></tr>
+<tr><td align='center'>22 (<i class='fa fa-caret-down'; style='color:red'></i> -17)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> STALLONE BIAGIO DIEGO E.</td><td align='center'>974</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>10</td><td align='center'>(0, 3, 0, 0)</td></tr>
+<tr><td align='center'>22 (<i class='fa fa-caret-down'; style='color:red'></i> -4)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> PISANI BRUNO</td><td align='center'>880</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>10</td><td align='center'>(0, 1, 0, 3)</td></tr>
+<tr><td align='center'>22 (<i class='fa fa-caret-down'; style='color:red'></i> -4)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PRIVITEA MARCO</td><td align='center'>976</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>10</td><td align='center'>(0, 3, 0, 1)</td></tr>
+<tr><td align='center'>22 (<i class='fa fa-caret-up'; style='color:green'></i> 63)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MESSORI FAUSTO</td><td align='center'>564</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>10</td><td align='center'>(0, 3, 3, 1)</td></tr>
+<tr><td align='center'>22 (<i class='fa fa-caret-up'; style='color:green'></i> 119)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> SPERANZON GIULIANO</td><td align='center'>217</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>10</td><td align='center'>(3, 1, 3, 1)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-down'; style='color:red'></i> -22)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FUSCO NICOLA</td><td align='center'>775</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>9</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-down'; style='color:red'></i> -9)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> COAN GIANNI</td><td align='center'>222</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>9</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-down'; style='color:red'></i> -9)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> AUCELLO SAVINO</td><td align='center'>872</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>9</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-down'; style='color:red'></i> -9)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DE ZUANI GIANNI</td><td align='center'>207</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>9</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-down'; style='color:red'></i> -9)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PIAZZA GIOVANNI</td><td align='center'>986</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>9</td><td align='center'>(0, 3, 0, 0)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 20)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BACCHIAVINI FRANCESCO</td><td align='center'>569</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>9</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 20)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VETTORI ENRICO</td><td align='center'>272</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>9</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 25)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VISMARA GIANLUIGI</td><td align='center'>278</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>9</td><td align='center'>(1, 0, 1, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 25)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BONORA GIAMPAOLO</td><td align='center'>519</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>9</td><td align='center'>(1, 0, 3, 1)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 25)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CASSINELLI ROBERTO</td><td align='center'>320</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>9</td><td align='center'>(0, 1, 3, 1)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 25)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZOCCHI FABIO</td><td align='center'>122</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>9</td><td align='center'>(1, 0, 3, 1)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 58)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CIVILINI MAURO</td><td align='center'>280</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>9</td><td align='center'>(0, 0, 3, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 119)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CELEGHIN ERMES</td><td align='center'>225</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>9</td><td align='center'>(1, 1, 3, 3)</td></tr>
+<tr><td align='center'>27 (<i class='fa fa-caret-up'; style='color:green'></i> 143)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZANNI FERNANDA</td><td align='center'>112</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>9</td><td align='center'>(3, 0, 3, 3)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-down'; style='color:red'></i> -36)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> CIAMBOTTI CESARE VINCENZO</td><td align='center'>708</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>8</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-down'; style='color:red'></i> -36)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> MACALUSO FABRIZIO</td><td align='center'>981</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>8</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-down'; style='color:red'></i> -23)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> COLONNA MATTEO</td><td align='center'>874</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>8</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 6)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BALZARINI MAURIZIO</td><td align='center'>025</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>8</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MANFERRARI STEFANO</td><td align='center'>505</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>8</td><td align='center'>(0, 1, 0, 3)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CORNERO FABRIZIO</td><td align='center'>426</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>8</td><td align='center'>(0, 0, 1, 3)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PERAZZOLO GALLO PAOLA</td><td align='center'>212</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>8</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CURCIO FERNANDO</td><td align='center'>913</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>8</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> SAETTONE GIOVANNI</td><td align='center'>404</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>8</td><td align='center'>(0, 3, 0, 1)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> COLUCCI LUIGI</td><td align='center'>605</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>8</td><td align='center'>(0, 3, 0, 1)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MARINI FEDERICO</td><td align='center'>118</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>8</td><td align='center'>(1, 3, 0, 0)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 11)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FOSCHINI ANDREA</td><td align='center'>624</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>8</td><td align='center'>(3, 0, 1, 0)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 44)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DALBOSCO NICOLETTA</td><td align='center'>121</td><td>VALACCHI STEFANO</td><td align='center'>Brescia</td><td align='center'>8</td><td align='center'>(1, 0, 1, 3)</td></tr>
+<tr><td align='center'>41 (<i class='fa fa-caret-up'; style='color:green'></i> 105)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BADAN CRISTIANO</td><td align='center'>210</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>8</td><td align='center'>(3, 0, 1, 3)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -50)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> NEMETH ALEXANDRA MARIA</td><td align='center'>027</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>7</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -50)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> NATALINA MAUGERI</td><td align='center'>969</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -50)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> VANNOLI BELINDA</td><td align='center'>814</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -50)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> RANIERI EDOARDO</td><td align='center'>795</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -37)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BINDI RACHELE</td><td align='center'>610</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>7</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -37)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CALABRESE GIANLUCA</td><td align='center'>864</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -37)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BOTTA ALESSANDRO</td><td align='center'>324</td><td>VERGANI ANTONIO</td><td align='center'>Torino</td><td align='center'>7</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -37)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> IANNONE AMERICO</td><td align='center'>710</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>7</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -3)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> ALFANO BIAGIO</td><td align='center'>903</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-down'; style='color:red'></i> -3)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FEBBRARO MARCO</td><td align='center'>909</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-up'; style='color:green'></i> 30)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MASSAGRANDE GRAZIANO</td><td align='center'>120</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>7</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-up'; style='color:green'></i> 30)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BELLINI ATTILIO</td><td align='center'>376</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>7</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-up'; style='color:green'></i> 91)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZOSCHG PETER</td><td align='center'>125</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>7</td><td align='center'>(1, 1, 1, 3)</td></tr>
+<tr><td align='center'>55 (<i class='fa fa-caret-up'; style='color:green'></i> 91)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> TOTTI ALBERTO</td><td align='center'>216</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>7</td><td align='center'>(1, 1, 3, 1)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> BIUNDO FRANCESCO</td><td align='center'>988</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> FONTANA SALVATORE</td><td align='center'>980</td><td>INSANGUINE MAURIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BORGHI ANTONIO</td><td align='center'>270</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CARUSO ANTONIO</td><td align='center'>924</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SAGUATTI ROBERTO</td><td align='center'>725</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BERNARDINI LAURA </td><td align='center'>811</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> SAVASTA SALVATORE</td><td align='center'>786</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FITTANTE ETTORE</td><td align='center'>809</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PALACINO GIOVANNI</td><td align='center'>769</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -51)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> SERINI VITO</td><td align='center'>863</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -17)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> OGGIONI MAURIZIO</td><td align='center'>261</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -17)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> GILBERTI RENATO</td><td align='center'>105</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -17)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> DE LISIO ENRICO</td><td align='center'>711</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-down'; style='color:red'></i> -17)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> RIVA ATTILIO</td><td align='center'>275</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> LATTUADA GIANANTONIO</td><td align='center'>279</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BESSI PAOLO</td><td align='center'>606</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BUOGO MAURO</td><td align='center'>314</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BOVONE MASSIMILIANO</td><td align='center'>368</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BENATI MICHELE</td><td align='center'>128</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> LA MARCA DIEGO</td><td align='center'>968</td><td>INSANGUINE MAURIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MONTI LUCIANO</td><td align='center'>516</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PASTORE OSCAR</td><td align='center'>820</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> ZAGATO ROBERTO</td><td align='center'>271</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> VINCI COSIMO</td><td align='center'>879</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(1, 1, 0, 1)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BARALDO GIORGIO</td><td align='center'>224</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(1, 0, 1, 1)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 16)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> VALORE ANTONIO</td><td align='center'>977</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(0, 3, 0, 0)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 72)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PAOLUCCI STEFANO</td><td align='center'>604</td><td>BERTOLI CLAUDIO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 1, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 72)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> PREVIDE  M. MASSIMO</td><td align='center'>374</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 101)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> RAGGI NICOLA</td><td align='center'>378</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(3, 0, 0, 3)</td></tr>
+<tr><td align='center'>69 (<i class='fa fa-caret-up'; style='color:green'></i> 101)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CARLETTI DAVIDE</td><td align='center'>111</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(3, 0, 0, 3)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -52)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> SANTARONI MARIO</td><td align='center'>821</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>5</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> FANTI MAURO</td><td align='center'>007</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>5</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TURANO FRANCO</td><td align='center'>962</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>5</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> AQUINO ANTONIO</td><td align='center'>910</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>5</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FERRANTE FABRIZIO</td><td align='center'>934</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>5</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> LEURINI ADRIANO</td><td align='center'>763</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>5</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> CUTTITTA ANDREA</td><td align='center'>810</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>5</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> FLORES MARIA DEL CARMEN</td><td align='center'>273</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>5</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -47)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SILVESTRI MARCO</td><td align='center'>720</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>5</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MASSARENTI SERGIO</td><td align='center'>206</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>5</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ALBERGONI GIORGIO</td><td align='center'>026</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>5</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> CUZZOLARO DAVIDE SAVIO</td><td align='center'>771</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>5</td><td align='center'>(0, 1, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PIGNATARO GAETANO</td><td align='center'>963</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>5</td><td align='center'>(0, 1, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> OLIVIERI ANGELO</td><td align='center'>322</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>5</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> TOCCANE GIULIANO</td><td align='center'>020</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>5</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BOVO LORIANO</td><td align='center'>208</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>5</td><td align='center'>(1, 1, 0, 0)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-down'; style='color:red'></i> -14)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> WOJTISSEK SERGIO</td><td align='center'>411</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>5</td><td align='center'>(1, 1, 0, 0)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-up'; style='color:green'></i> 47)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> GRECCHI AUGUSTO</td><td align='center'>361</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>5</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>99 (<i class='fa fa-caret-up'; style='color:green'></i> 47)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PEDATA ANTONIO</td><td align='center'>712</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>5</td><td align='center'>(0, 1, 0, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -66)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> GHIDINI ENRICO</td><td align='center'>022</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -66)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> PERSIANO CONCETTA</td><td align='center'>721</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -66)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> DI NATALE MASSIMILIANO</td><td align='center'>764</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -66)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> COSSU CARLO</td><td align='center'>372</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -66)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> VECCHIATI CARLO </td><td align='center'>103</td><td>ARMANINI DAVIDE</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TIEGHI FABRIZIO</td><td align='center'>813</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MOLETTIERI ARMANDO</td><td align='center'>923</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PREST SANTE</td><td align='center'>221</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PIAZZA FEDERICO</td><td align='center'>575</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> ZARRA SIMONA</td><td align='center'>826</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FIORE CARMINE</td><td align='center'>765</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DAL GRANDE ROBERTO</td><td align='center'>215</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-down'; style='color:red'></i> -33)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> IMPERATORE GENNARO</td><td align='center'>936</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 28)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VESENTINI ENRICO</td><td align='center'>284</td><td>VESENTINI EROS</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 28)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BERETTA VITTORIO</td><td align='center'>024</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 28)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FABBRI GUIDO </td><td align='center'>716</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 28)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> SANTORO DOMENICO</td><td align='center'>884</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 28)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> BIANCHI EUGENIO</td><td align='center'>887</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 28)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VERONESE MARCO</td><td align='center'>323</td><td>VERGANI ANTONIO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 52)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> CARDELLINI ALVARO</td><td align='center'>714</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(0, 0, 1, 3)</td></tr>
+<tr><td align='center'>118 (<i class='fa fa-caret-up'; style='color:green'></i> 52)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PIATESI PIERO</td><td align='center'>515</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(0, 0, 3, 1)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VACCARI GUIDO</td><td align='center'>410</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SAVIOLI MAURIZIO</td><td align='center'>525</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> ARGENTO ROBERTO</td><td align='center'>904</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CAROZZI PAOLO GIOVANNI</td><td align='center'>283</td><td>VESENTINI EROS</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MAZZANTINI MASSIMO</td><td align='center'>703</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> CACIOPPO DANIELE</td><td align='center'>982</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MAZZON SERGIO</td><td align='center'>204</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PARIGI ALESSANDRO</td><td align='center'>620</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CARRARO CRISTIANO</td><td align='center'>205</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> FAVA PAOLO</td><td align='center'>503</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MALOSSI ROBERTO</td><td align='center'>617</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> TOME' GIANCARLO</td><td align='center'>234</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> PASTORELLI LUCA</td><td align='center'>329</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CERA MASSIMILIANO</td><td align='center'>328</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> ETTORI IVANO</td><td align='center'>006</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MIANI ALBERTO</td><td align='center'>563</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> DEL DUCA EMILIANO</td><td align='center'>762</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BOTTERO NICCOLO'</td><td align='center'>427</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CASTELLO LUIGI</td><td align='center'>522</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MAIOLATESI CLAUDIO</td><td align='center'>806</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SILVIDII EMANUELE</td><td align='center'>719</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-down'; style='color:red'></i> -54)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> LOMBARDI ANGELO</td><td align='center'>607</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-up'; style='color:green'></i> 7)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BARBIERI STEFANO</td><td align='center'>116</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-up'; style='color:green'></i> 31)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CARRETTA ALBERTO</td><td align='center'>576</td><td>ARMANINI DAVIDE</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-up'; style='color:green'></i> 31)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MACCHIONE RICCARDO</td><td align='center'>973</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(0, 0, 0, 3)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-up'; style='color:green'></i> 31)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> ANTICHI ALBERTO</td><td align='center'>614</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 3, 0, 0)</td></tr>
+<tr><td align='center'>139 (<i class='fa fa-caret-up'; style='color:green'></i> 31)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> PRATICO'  GIOVANNI</td><td align='center'>979</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(0, 3, 0, 0)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -25)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CAPRA ROBERTO</td><td align='center'>017</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>2</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -25)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> PASCIUTI ANTONIO</td><td align='center'>321</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>2</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> MAIONI ROBERTO</td><td align='center'>268</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>2</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BERNARDI ENIO</td><td align='center'>608</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>2</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> GRECO ROCCO</td><td align='center'>886</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>2</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> DI GREGORIO GIUSEPPE</td><td align='center'>789</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>2</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MATTEI UMBERTO</td><td align='center'>823</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>2</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> RIZZUTI SERAFINO</td><td align='center'>978</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>2</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> CALI' MARIA TESERA</td><td align='center'>967</td><td>INSANGUINE MAURIZIO</td><td align='center'>Catania</td><td align='center'>2</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-down'; style='color:red'></i> -20)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SILIANI ROBERTO</td><td align='center'>612</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>2</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-up'; style='color:green'></i> 4)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BERTOCCO FABRIZIO</td><td align='center'>108</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>2</td><td align='center'>(0, 0, 1, 1)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-up'; style='color:green'></i> 4)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MARINIELLO SALVATORE </td><td align='center'>777</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>2</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-up'; style='color:green'></i> 4)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> MOLINO ANDREA</td><td align='center'>326</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>2</td><td align='center'>(0, 1, 0, 1)</td></tr>
+<tr><td align='center'>166 (<i class='fa fa-caret-up'; style='color:green'></i> 4)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DIONI SILVIO</td><td align='center'>110</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>2</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -34)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> DE MATTEIS PATRIZIO</td><td align='center'>305</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -34)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> LUINI IVAN</td><td align='center'>018</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -34)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> NUCERA GIOVANNI</td><td align='center'>012</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -10)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> GUITTO ENRICO</td><td align='center'>229</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>1</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -10)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CORNERO GIULIO</td><td align='center'>367</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -10)</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> GRILLI MAURIZIO</td><td align='center'>718</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>1</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -10)</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> SALADINO VITO</td><td align='center'>971</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>1</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -10)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> GILETTA FERRUCCIO</td><td align='center'>331</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(0, 0, 1, 0)</td></tr>
+<tr><td align='center'>180 (<i class='fa fa-caret-down'; style='color:red'></i> -10)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> GIARDINI MARCO</td><td align='center'>269</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(0, 1, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MASSARO SILVANO</td><td align='center'>117</td><td>ARMANINI DAVIDE</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> COSTANTINO VINCENZO</td><td align='center'>281</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PIELLI MAURIZIO</td><td align='center'>230</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> FERRARI FEDERICO</td><td align='center'>028</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> VALERIO NUNZIO</td><td align='center'>214</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CONTINO GIUSEPPE</td><td align='center'>023</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> RAINA FEDERICA</td><td align='center'>364</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> LAVISTA LUCA A.P.</td><td align='center'>330</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZOSCHG MARKUS </td><td align='center'>126</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> RAIMONDI FABIO</td><td align='center'>381</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BOSONOTTO NEGRO GIORGIO</td><td align='center'>266</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TEDESCO ALFONSO</td><td align='center'>780</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>189 (<i class='fa fa-caret-down'; style='color:red'></i> -19)</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> RIZZO ANDREA </td><td align='center'>315</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+
+
+
+</tbody>
+
+             
+                  
+              </table>
+            
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Classifica di Luglio 2018 (1°giornata)</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example1" class="table table-bordered table-striped">
+                  
+                <thead>
+                    <tr>
+                      <th>Pos.</th>
+                      <th>Giocatore</th>
+                      <th>Zona</th>
+                      <th>Allenatore</th>
+                      <th>Squadra</th>
+                      <th>Punteggio</th>
+                      <th>(1°giornata)</th>
+                    </tr>
+                </thead>
+                  
+                <tfoot>
+                    <tr>
+                      <th>Pos.</th>
+                      <th>Giocatore</th>
+                      <th>Zona</th>
+                      <th>Allenatore</th>
+                      <th>Squadra</th>
+                      <th>Punteggio</th>
+                      <th>(1°giornata)</th>
+                    </tr>
+                </tfoot>
+<tbody>
+<tr><td align='center'>1</td><td><i class="fa fa-user-ninja" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> RUSSO PIETRO</td><td align='center'>908</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>12</td><td align='center'>(3, 3, 3, 3)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user-ninja" style="color:#078930;font-size:20px;margin-right:8px;"></i> MUSSINELLI MAURO</td><td align='center'>109</td><td>VALACCHI STEFANO</td><td align='center'>Brescia</td><td align='center'>7</td><td align='center'>(3, 0, 3, 1)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user-ninja" style="color:#078930;font-size:20px;margin-right:8px;"></i> DENDENA GAETANO</td><td align='center'>030</td><td>VALACCHI STEFANO</td><td align='center'>Brescia</td><td align='center'>7</td><td align='center'>(3, 0, 3, 1)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MINARDI RICCARDO</td><td align='center'>517</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>7</td><td align='center'>(1, 0, 3, 3)</td></tr>
+<tr><td align='center'>2</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CHIODINI ANDREA</td><td align='center'>373</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>9</td><td align='center'>(3, 0, 3, 3)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FARAGLIA ALESSANDRA</td><td align='center'>819</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>4</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> NARDONE LUIGI</td><td align='center'>807</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>8</td><td align='center'>(3, 1, 3, 1)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TREDICI JOHN</td><td align='center'>794</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(3, 0, 3, 1)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BALDUCCI ANGELO</td><td align='center'>518</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FIENGA FRANCESCO</td><td align='center'>911</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 0, 3)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> ARCIDIACONO FABIO GIUSEPPE</td><td align='center'>985</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> BOVE AGOSTINO</td><td align='center'>881</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SAGRIPANTI MARCO</td><td align='center'>816</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> IACOVELLI FABIO</td><td align='center'>915</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(3, 0, 1, 0)</td></tr>
+<tr><td align='center'>2</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MALGHERINI OLGA</td><td align='center'>870</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>9</td><td align='center'>(3, 0, 3, 3)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CAPUTO ANGELO</td><td align='center'>912</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(3, 1, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> DI IORIO AUGUSTO</td><td align='center'>907</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BERGAMI MASSIMO</td><td align='center'>506</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>47</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SEMBOLONI NATALE</td><td align='center'>619</td><td>BERTOLI CLAUDIO</td><td align='center'>Firenze</td><td align='center'>5</td><td align='center'>(3, 0, 1, 1)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SODI CARLO</td><td align='center'>615</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PISTORESI MASSIMO</td><td align='center'>104</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> STALLONE BIAGIO DIEGO E.</td><td align='center'>974</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>7</td><td align='center'>(3, 1, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> PISANI BRUNO</td><td align='center'>880</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 0, 3)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PRIVITEA MARCO</td><td align='center'>976</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MESSORI FAUSTO</td><td align='center'>564</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>141</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> SPERANZON GIULIANO</td><td align='center'>217</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>2</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FUSCO NICOLA</td><td align='center'>775</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(1, 3, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> COAN GIANNI</td><td align='center'>222</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> AUCELLO SAVINO</td><td align='center'>872</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DE ZUANI GIANNI</td><td align='center'>207</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PIAZZA GIOVANNI</td><td align='center'>986</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>47</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BACCHIAVINI FRANCESCO</td><td align='center'>569</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>5</td><td align='center'>(0, 1, 3, 1)</td></tr>
+<tr><td align='center'>47</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VETTORI ENRICO</td><td align='center'>272</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>5</td><td align='center'>(1, 1, 0, 3)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VISMARA GIANLUIGI</td><td align='center'>278</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BONORA GIAMPAOLO</td><td align='center'>519</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CASSINELLI ROBERTO</td><td align='center'>320</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZOCCHI FABIO</td><td align='center'>122</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CIVILINI MAURO</td><td align='center'>280</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CELEGHIN ERMES</td><td align='center'>225</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZANNI FERNANDA</td><td align='center'>112</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> CIAMBOTTI CESARE VINCENZO</td><td align='center'>708</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>7</td><td align='center'>(3, 1, 3, 0)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> MACALUSO FABRIZIO</td><td align='center'>981</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>7</td><td align='center'>(3, 1, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> COLONNA MATTEO</td><td align='center'>874</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>47</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BALZARINI MAURIZIO</td><td align='center'>025</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>5</td><td align='center'>(1, 0, 3, 1)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MANFERRARI STEFANO</td><td align='center'>505</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CORNERO FABRIZIO</td><td align='center'>426</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PERAZZOLO GALLO PAOLA</td><td align='center'>212</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(0, 0, 3, 1)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CURCIO FERNANDO</td><td align='center'>913</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(3, 0, 0, 1)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> SAETTONE GIOVANNI</td><td align='center'>404</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> COLUCCI LUIGI</td><td align='center'>605</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(1, 0, 0, 3)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MARINI FEDERICO</td><td align='center'>118</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(3, 1, 0, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FOSCHINI ANDREA</td><td align='center'>624</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DALBOSCO NICOLETTA</td><td align='center'>121</td><td>VALACCHI STEFANO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BADAN CRISTIANO</td><td align='center'>210</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> NEMETH ALEXANDRA MARIA</td><td align='center'>027</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>7</td><td align='center'>(3, 0, 3, 1)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> NATALINA MAUGERI</td><td align='center'>969</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(1, 0, 3, 3)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> VANNOLI BELINDA</td><td align='center'>814</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(1, 3, 3, 0)</td></tr>
+<tr><td align='center'>5</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> RANIERI EDOARDO</td><td align='center'>795</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>7</td><td align='center'>(1, 3, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BINDI RACHELE</td><td align='center'>610</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CALABRESE GIANLUCA</td><td align='center'>864</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BOTTA ALESSANDRO</td><td align='center'>324</td><td>VERGANI ANTONIO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> IANNONE AMERICO</td><td align='center'>710</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(0, 3, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> ALFANO BIAGIO</td><td align='center'>903</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FEBBRARO MARCO</td><td align='center'>909</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MASSAGRANDE GRAZIANO</td><td align='center'>120</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BELLINI ATTILIO</td><td align='center'>376</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZOSCHG PETER</td><td align='center'>125</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> TOTTI ALBERTO</td><td align='center'>216</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> BIUNDO FRANCESCO</td><td align='center'>988</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> FONTANA SALVATORE</td><td align='center'>980</td><td>INSANGUINE MAURIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BORGHI ANTONIO</td><td align='center'>270</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> CARUSO ANTONIO</td><td align='center'>924</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SAGUATTI ROBERTO</td><td align='center'>725</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BERNARDINI LAURA </td><td align='center'>811</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> SAVASTA SALVATORE</td><td align='center'>786</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FITTANTE ETTORE</td><td align='center'>809</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PALACINO GIOVANNI</td><td align='center'>769</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>6</td><td align='center'>(3, 0, 3, 0)</td></tr>
+<tr><td align='center'>18</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> SERINI VITO</td><td align='center'>863</td><td>CAPPELLETTA GIUSEPPE</td><td align='center'>Napoli</td><td align='center'>6</td><td align='center'>(3, 0, 0, 3)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> OGGIONI MAURIZIO</td><td align='center'>261</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> GILBERTI RENATO</td><td align='center'>105</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> DE LISIO ENRICO</td><td align='center'>711</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> RIVA ATTILIO</td><td align='center'>275</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> LATTUADA GIANANTONIO</td><td align='center'>279</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BESSI PAOLO</td><td align='center'>606</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BUOGO MAURO</td><td align='center'>314</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BOVONE MASSIMILIANO</td><td align='center'>368</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BENATI MICHELE</td><td align='center'>128</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> LA MARCA DIEGO</td><td align='center'>968</td><td>INSANGUINE MAURIZIO</td><td align='center'>Catania</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MONTI LUCIANO</td><td align='center'>516</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PASTORE OSCAR</td><td align='center'>820</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> ZAGATO ROBERTO</td><td align='center'>271</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> VINCI COSIMO</td><td align='center'>879</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BARALDO GIORGIO</td><td align='center'>224</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> VALORE ANTONIO</td><td align='center'>977</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>141</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PAOLUCCI STEFANO</td><td align='center'>604</td><td>BERTOLI CLAUDIO</td><td align='center'>Firenze</td><td align='center'>2</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>141</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> PREVIDE  M. MASSIMO</td><td align='center'>374</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>2</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> RAGGI NICOLA</td><td align='center'>378</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CARLETTI DAVIDE</td><td align='center'>111</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>47</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> SANTARONI MARIO</td><td align='center'>821</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>5</td><td align='center'>(3, 1, 0, 1)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> FANTI MAURO</td><td align='center'>007</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TURANO FRANCO</td><td align='center'>962</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> AQUINO ANTONIO</td><td align='center'>910</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FERRANTE FABRIZIO</td><td align='center'>934</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> LEURINI ADRIANO</td><td align='center'>763</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> CUTTITTA ANDREA</td><td align='center'>810</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> FLORES MARIA DEL CARMEN</td><td align='center'>273</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SILVESTRI MARCO</td><td align='center'>720</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MASSARENTI SERGIO</td><td align='center'>206</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ALBERGONI GIORGIO</td><td align='center'>026</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> CUZZOLARO DAVIDE SAVIO</td><td align='center'>771</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> PIGNATARO GAETANO</td><td align='center'>963</td><td>FINOCCHIARO FABRIZIO</td><td align='center'>Catania</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> OLIVIERI ANGELO</td><td align='center'>322</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> TOCCANE GIULIANO</td><td align='center'>020</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BOVO LORIANO</td><td align='center'>208</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> WOJTISSEK SERGIO</td><td align='center'>411</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> GRECCHI AUGUSTO</td><td align='center'>361</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PEDATA ANTONIO</td><td align='center'>712</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> GHIDINI ENRICO</td><td align='center'>022</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(0, 0, 3, 1)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> PERSIANO CONCETTA</td><td align='center'>721</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> DI NATALE MASSIMILIANO</td><td align='center'>764</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> COSSU CARLO</td><td align='center'>372</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>4</td><td align='center'>(1, 0, 3, 0)</td></tr>
+<tr><td align='center'>52</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> VECCHIATI CARLO </td><td align='center'>103</td><td>ARMANINI DAVIDE</td><td align='center'>Brescia</td><td align='center'>4</td><td align='center'>(0, 0, 3, 1)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TIEGHI FABRIZIO</td><td align='center'>813</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MOLETTIERI ARMANDO</td><td align='center'>923</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PREST SANTE</td><td align='center'>221</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PIAZZA FEDERICO</td><td align='center'>575</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> ZARRA SIMONA</td><td align='center'>826</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> FIORE CARMINE</td><td align='center'>765</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DAL GRANDE ROBERTO</td><td align='center'>215</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> IMPERATORE GENNARO</td><td align='center'>936</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VESENTINI ENRICO</td><td align='center'>284</td><td>VESENTINI EROS</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BERETTA VITTORIO</td><td align='center'>024</td><td>MARTEGANI MASSIMO</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> FABBRI GUIDO </td><td align='center'>716</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> SANTORO DOMENICO</td><td align='center'>884</td><td>VINCI COSIMO</td><td align='center'>Napoli</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> BIANCHI EUGENIO</td><td align='center'>887</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VERONESE MARCO</td><td align='center'>323</td><td>VERGANI ANTONIO</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> CARDELLINI ALVARO</td><td align='center'>714</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PIATESI PIERO</td><td align='center'>515</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> VACCARI GUIDO</td><td align='center'>410</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SAVIOLI MAURIZIO</td><td align='center'>525</td><td>POLI MICHELE </td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> ARGENTO ROBERTO</td><td align='center'>904</td><td>MOLINO MAURIZIO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CAROZZI PAOLO GIOVANNI</td><td align='center'>283</td><td>VESENTINI EROS</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MAZZANTINI MASSIMO</td><td align='center'>703</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> CACIOPPO DANIELE</td><td align='center'>982</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MAZZON SERGIO</td><td align='center'>204</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> PARIGI ALESSANDRO</td><td align='center'>620</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CARRARO CRISTIANO</td><td align='center'>205</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> FAVA PAOLO</td><td align='center'>503</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MALOSSI ROBERTO</td><td align='center'>617</td><td>MIRALLI AURELIO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> TOME' GIANCARLO</td><td align='center'>234</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> PASTORELLI LUCA</td><td align='center'>329</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CERA MASSIMILIANO</td><td align='center'>328</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> ETTORI IVANO</td><td align='center'>006</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MIANI ALBERTO</td><td align='center'>563</td><td>PREVIATO MARCO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> DEL DUCA EMILIANO</td><td align='center'>762</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BOTTERO NICCOLO'</td><td align='center'>427</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CASTELLO LUIGI</td><td align='center'>522</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> MAIOLATESI CLAUDIO</td><td align='center'>806</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SILVIDII EMANUELE</td><td align='center'>719</td><td>MANCIN ROBERTO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(3, 0, 0, 0)</td></tr>
+<tr><td align='center'>85</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> LOMBARDI ANGELO</td><td align='center'>607</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>3</td><td align='center'>(0, 0, 3, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BARBIERI STEFANO</td><td align='center'>116</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> CARRETTA ALBERTO</td><td align='center'>576</td><td>ARMANINI DAVIDE</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MACCHIONE RICCARDO</td><td align='center'>973</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> ANTICHI ALBERTO</td><td align='center'>614</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> PRATICO'  GIOVANNI</td><td align='center'>979</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>141</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CAPRA ROBERTO</td><td align='center'>017</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>2</td><td align='center'>(1, 0, 1, 0)</td></tr>
+<tr><td align='center'>141</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> PASCIUTI ANTONIO</td><td align='center'>321</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>2</td><td align='center'>(1, 0, 0, 1)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> MAIONI ROBERTO</td><td align='center'>268</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> BERNARDI ENIO</td><td align='center'>608</td><td>ARTINI MARCO</td><td align='center'>Firenze</td><td align='center'>1</td><td align='center'>(0, 0, 0, 1)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> GRECO ROCCO</td><td align='center'>886</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> DI GREGORIO GIUSEPPE</td><td align='center'>789</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MATTEI UMBERTO</td><td align='center'>823</td><td>PERELLI IVANO</td><td align='center'>Napoli</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> RIZZUTI SERAFINO</td><td align='center'>978</td><td>ROTONDARO PIETRO</td><td align='center'>Napoli</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> CALI' MARIA TESERA</td><td align='center'>967</td><td>INSANGUINE MAURIZIO</td><td align='center'>Catania</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> SILIANI ROBERTO</td><td align='center'>612</td><td>PAPI MARCO</td><td align='center'>Firenze</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> BERTOCCO FABRIZIO</td><td align='center'>108</td><td>DITTO LUCA</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> MARINIELLO SALVATORE </td><td align='center'>777</td><td>SILVAGNI BENEDETTO</td><td align='center'>Napoli</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> MOLINO ANDREA</td><td align='center'>326</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> DIONI SILVIO</td><td align='center'>110</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> DE MATTEIS PATRIZIO</td><td align='center'>305</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> LUINI IVAN</td><td align='center'>018</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>146</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> NUCERA GIOVANNI</td><td align='center'>012</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>1</td><td align='center'>(1, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> GUITTO ENRICO</td><td align='center'>229</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CORNERO GIULIO</td><td align='center'>367</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#8629C6;font-size:20px;margin-right:8px;"></i> GRILLI MAURIZIO</td><td align='center'>718</td><td>ALCINI GIUSEPPE</td><td align='center'>Firenze</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#ffc72c;font-size:20px;margin-right:8px;"></i> SALADINO VITO</td><td align='center'>971</td><td>FRISCO GIUSEPPE</td><td align='center'>Catania</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> GILETTA FERRUCCIO</td><td align='center'>331</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> GIARDINI MARCO</td><td align='center'>269</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> MASSARO SILVANO</td><td align='center'>117</td><td>ARMANINI DAVIDE</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> COSTANTINO VINCENZO</td><td align='center'>281</td><td>PACE DARIO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> PIELLI MAURIZIO</td><td align='center'>230</td><td>VIALE MAURIZIO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> FERRARI FEDERICO</td><td align='center'>028</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> VALERIO NUNZIO</td><td align='center'>214</td><td>MINCHIO MARIO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> CONTINO GIUSEPPE</td><td align='center'>023</td><td>BOMBACIGNO GIUSEPPE</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> RAINA FEDERICA</td><td align='center'>364</td><td>CALANDRIA GIULIANO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> LAVISTA LUCA A.P.</td><td align='center'>330</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> ZOSCHG MARKUS </td><td align='center'>126</td><td>CARLETTI FILIPPO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#078930;font-size:20px;margin-right:8px;"></i> RAIMONDI FABIO</td><td align='center'>381</td><td>MANCIN RENATO</td><td align='center'>Brescia</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> BOSONOTTO NEGRO GIORGIO</td><td align='center'>266</td><td>BUFFA EROS</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#3da9ea;font-size:20px;margin-right:8px;"></i> TEDESCO ALFONSO</td><td align='center'>780</td><td>CERCHIA ROCCO</td><td align='center'>Napoli</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+<tr><td align='center'>170</td><td><i class="fa fa-user" style="color:#e86406;font-size:20px;margin-right:8px;"></i> RIZZO ANDREA </td><td align='center'>315</td><td>OLIVIERI ALESSANDRO</td><td align='center'>Torino</td><td align='center'>0</td><td align='center'>(0, 0, 0, 0)</td></tr>
+
+
+
+</tbody>
+
+              </table>
+            
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row --  
+      
+      </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Made with <i class="fa fa-heart"></i> in <a href="https://www.conqordoil.it" target="_blank">Conqord Oil</a>.</strong>
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="build/js/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="build/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="build/js/jquery.dataTables.js"></script>
+<script src="build/js/dataTables.bootstrap4.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+    
+<!-- SlimScroll -->
+<script src="build/js/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="build/js/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="build/js/adminlte.min.js"></script>
+
+<!-- page script -->
+<script>
+    $(document).ready(function() {
+        $('#example1').DataTable( {
+            dom: "lftiprB",
+            buttons: [
+                {
+                    extend: 'print',
+                    text: 'Stampa classifica'
+                }
+            ],
+            initComplete: function () {
+                this.api().columns([3, 4]).every( function () {
+                    var column = this;
+                    var select = $('<select><option value="">Show all</option></select>')
+                        .appendTo( $(column.footer()).empty() )
+                        .on( 'change', function () {
+                            var val = $.fn.dataTable.util.escapeRegex(
+                                $(this).val()
+                            );
+                            column
+                                .search( val ? '^'+val+'$' : '', true, false )
+                                .draw();
+                        } );
+                    column.data().unique().sort().each( function ( d, j ) {
+                        select.append( '<option value="'+d+'">'+d+'</option>' )
+                    } );
+                } );
+            }
+        } );
+    } );
+    $(document).ready(function() {
+        $('#example2').DataTable( {
+            "order": [[ 5, "desc" ]],
+            dom: "lftiprB",
+            buttons: [
+                {
+                    extend: 'print',
+                    text: 'Stampa classifica'
+                }
+            ],
+            initComplete: function () {
+                this.api().columns([3, 4]).every( function () {
+                    var column = this;
+                    var select = $('<select><option value="">Show all</option></select>')
+                        .appendTo( $(column.footer()).empty() )
+                        .on( 'change', function () {
+                            var val = $.fn.dataTable.util.escapeRegex(
+                                $(this).val()
+                            );
+                            column
+                                .search( val ? '^'+val+'$' : '', true, false )
+                                .draw();
+                        } );
+                    column.data().unique().sort().each( function ( d, j ) {
+                        select.append( '<option value="'+d+'">'+d+'</option>' )
+                    } );
+                } );
+            }
+        } );
+    } );
+</script>
+</body>
+</html>
